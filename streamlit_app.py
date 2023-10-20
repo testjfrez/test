@@ -1,4 +1,11 @@
 import streamlit as st
 
-nombre=st.text_input("Nombre? ")
-st.write("Hola " +nombre)
+import pandas as pd
+
+# Crear un DataFrame simple
+df = pd.DataFrame({
+    'Mensaje': ['¡Hola mundo!']
+})
+
+# Mostrar el DataFrame
+st.dataframe(df)
